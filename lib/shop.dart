@@ -89,7 +89,7 @@ class _ItemRowState extends State<ItemRow> {
             stats.canAfford(widget.itemId) ? upgrade : null;
 
         if (stats.items[widget.itemId] == null) {
-          throw Exception('Item $widget.itemId não existe');
+          throw Exception('Item ${widget.itemId} não existe');
         }
 
         item = stats.items[widget.itemId]!;
